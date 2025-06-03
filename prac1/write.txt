@@ -1,0 +1,19 @@
+query selector better way to get elements
+document.querySelector("#id/.class/tag")// acess all the tags or class 
+// return the first element of that 
+//to select all we need document.querySelectorAll("__")
+ dom properties
+ tagName:-return the tag of the element node
+ innerText:- returns the inner text of the element and all childern (only text in each tag)
+ div.innerText="abbc" //replace everything with the text
+ innerHtml:- return the plain text or HTMl contents in the elements (text + tags in a string)
+ div.innerHtml="<div>replace everything with this one tag</div>"
+ textContent; works same as innerText but also for hidden elements
+
+ nodes - first child property/last child property
+.firstchild,.childern,.lastchild
+all these above child use for navigation
+ DOM nodes types
+ text nodes
+ comment nodes
+ elements 

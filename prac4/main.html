@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What javascript can do?</h2>
+    <div id="hello">First js program</div>
+    <div id="name">My font size will be changed</div>
+    <div id="demo">javaScript can hide HTML elements.</div>
+    <div>javaScript can display hidden HTML elements.</div>
+    <div id="demo2" style="display: none">Hello javascript</div>
+    <div id="demo3"></div>
+    <h2>active debugging for console</h2>
+    <p>Go to inspect by right click on the web</p>
+    <p>Then select "Console" in the debugger menu.</p>
+    <p>Then click Run again.</p>
+
+    <button type="button" onclick="document.getElementById('hello').innerHTML='Hello javascript!'">Change inner HTML</button>
+    <button type="button" onclick="document.getElementById('name').style.fontSize='35px'">change style</button>
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">HIde element</button>
+    <button type="button" onclick="document.getElementById('demo2').style.display='block'">show element</button>
+    <!-- document.write after loading the complete page is entered will delete everything example -->
+    <button type="button" onclick="document.write('this will delete everything and only display this message')">Try it</button>
+
+    <!-- print this page -->
+    <button type="button" onclick="window.print()">print this page</button>
+    <h2> JavaScript Validation</h2>
+    <div>enter any number between 1 to 10</div>
+    <input id="num">
+    <button id="inpu" onclick="myfunc()">submit</button>
+    <p id="output"></p>
+
+    <script>
+        window.alert('welcome')
+        // you can skip the window keyword. In JavaScript, the window object is the global scope object. 
+        // This means that variables, properties, and methods by default belong to the window object.
+        console.log(17+3);
+        function myfunc(){
+            let x= document.getElementById('num').value;
+            let text;
+            if(isNaN(x)||x<1||x>10)
+            text="input is invalid";
+            else
+            text ="input is valid";
+            document.getElementById('output').innerHTML=text;
+        }
+        
+    </script>
+
+</body>
+</html>
