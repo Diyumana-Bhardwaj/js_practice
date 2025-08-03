@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+        label{
+            display: block;
+            margin-top: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+        width: 400px;
+        padding: 8px;
+        margin-top: 5px;
+        }
+        input[type="submit"]{
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body >
+   
+    <div class="form">
+        <h2>Consent Form</h2>
+        <form id="consentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label>
+            <input type="checkbox" id="consent" required />
+            I consent to the processing of my information.
+            </label>
+
+            <div class="error" id="errorMsg"></div>
+
+            <input type="submit">
+        </form>
+    </div>
+    <div id="declaration" style="display: none;">
+        <h4>Declaration:</h4>
+        I <span class="fill_name"></span>, hereby declare that the information provided by me — including my 
+        <b>name : <span class="fill_name"></span></b>, <b>email address : <span id="fill_email"></span></b>, <b>password : <span id="fill_password"></span></b>
+        is true and correct to the best of my knowledge. I understand and agree that by submitting this form, I consent to the collection, processing, and storage of my personal information for the stated purposes. I acknowledge that I have read and understood this declaration and voluntarily submit my credentials in good faith.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

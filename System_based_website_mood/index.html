@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theme Preference</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+
+    /* Light Theme */
+    .light-theme {
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      color: #000;
+    }
+
+    /* Dark Theme */
+    .dark-theme {
+      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2.5rem 3.5rem;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .card h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    /* Optional: Button color changes in dark mode */
+    .dark-theme .card button {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .dark-theme .card button:hover {
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+  </style>
+</head>
+<body class="light-theme">
+  <div class="card">
+    <h1>Theme Preference</h1>
+    <button>Toggle Theme</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
