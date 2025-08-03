@@ -1,0 +1,7 @@
+.right_transition {
+  transition: right 0.3s ease-in-out;
+}
+
+.left_transition {
+  transition: left 0.3s ease-in-out;
+}
